@@ -25,14 +25,14 @@ window.addEventListener("load", reveal);
 
 // Menú hamburguesa
 const toggleBtn = document.getElementById('menu-toggle');
-const navList = document.querySelector('nav ul');
+const navList = document.getElementById('navbar');
 
 toggleBtn.addEventListener('click', () => {
   navList.classList.toggle('active');
 });
 
 // Cerrar menú al hacer clic en enlace
-document.querySelectorAll('nav a').forEach(link => {
+document.querySelectorAll('#navbar a').forEach(link => {
   link.addEventListener('click', () => {
     navList.classList.remove('active');
   });

@@ -1,3 +1,4 @@
+/* ESTILOS BASE */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -11,11 +12,12 @@ body {
   padding: 20px;
 }
 
+/* NAVBAR */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #6a1b9a;
+  background-color: #6a1b9a; /* Morado */
   color: white;
   transition: all 0.3s ease;
   z-index: 999;
@@ -35,6 +37,14 @@ header .container {
   padding: 20px;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+  color: white;
+}
+
+/* NAVEGACIÓN */
 nav ul {
   list-style: none;
   margin: 0;
@@ -42,6 +52,10 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+}
+
+nav ul li {
+  margin: 0;
 }
 
 nav a {
@@ -55,14 +69,17 @@ nav a:hover {
   text-decoration: underline;
 }
 
+/* SECCIONES */
 section {
   margin-top: 120px;
   padding: 40px 20px;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  scroll-margin-top: 120px; /* evitar que el header lo tape */
 }
 
+/* FOTO */
 .foto {
   width: 150px;
   border-radius: 50%;
@@ -71,6 +88,7 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
+/* ANIMACIONES AL SCROLL */
 .reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -82,6 +100,7 @@ section {
   transform: translateY(0);
 }
 
+/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -91,17 +110,7 @@ footer {
   margin-top: 60px;
 }
 
-section {
-  scroll-margin-top: 120px;
-}
-
-/* Responsive */
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  cursor: pointer;
-}
-
+/* RESPONSIVE */
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
@@ -109,13 +118,18 @@ section {
     padding: 15px;
   }
 
+  .menu-toggle {
+    display: block;
+    margin-top: 10px;
+  }
+
   nav ul {
+    display: none;
     flex-direction: column;
     gap: 0;
     width: 100%;
     align-items: center;
-    display: none;
-    transition: all 0.3s ease;
+    margin-top: 10px;
   }
 
   nav ul.active {
@@ -123,15 +137,16 @@ section {
   }
 
   nav li {
+    width: 100%;
     border-top: 1px solid #ffffff33;
     padding: 10px 0;
-    width: 100%;
     text-align: center;
   }
 
-  .menu-toggle {
+  nav a {
+    font-size: 1.1rem;
     display: block;
-    color: white;
+    padding: 8px;
   }
 
   .foto {
@@ -145,8 +160,8 @@ section {
     padding: 30px 15px;
   }
 
-  h1 {
-    font-size: 1.5rem;
+  .hero h1 {
+    font-size: 1.8rem;
     text-align: center;
   }
 }
