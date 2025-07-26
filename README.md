@@ -1,8 +1,8 @@
-# 🧾 Hoja de Vida - Héctor Galicia
+Hoja de Vida - Héctor Galicia
 
 Este es un proyecto personal como parte de una tarea universitaria, donde se desarrolla una **página web estilo hoja de vida** utilizando tecnologías modernas de desarrollo web.
 
-## 🛠️ Tecnologías utilizadas
+Tecnologías utilizadas
 
 - HTML5
 - CSS3
@@ -10,7 +10,7 @@ Este es un proyecto personal como parte de una tarea universitaria, donde se des
 - Diseño Responsivo (optimizado para móviles)
 - Git & GitHub Pages
 
-## 📱 Características del sitio
+Características del sitio
 
 - Diseño moderno con tonos morados
 - Navegación fija y funcional en escritorio y móvil
