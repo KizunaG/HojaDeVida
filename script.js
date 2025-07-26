@@ -1,38 +1,39 @@
-// ENCOGER NAVBAR AL SCROLL
+// Encoger navbar al hacer scroll
 window.addEventListener("scroll", function () {
   const header = document.querySelector("header");
   header.classList.toggle("shrink", window.scrollY > 80);
 });
 
-// ANIMACIÓN AL SCROLL
+// Animación reveal al hacer scroll
 function reveal() {
   const reveals = document.querySelectorAll(".reveal");
-  for (let i = 0; i < reveals.length; i++) {
+  reveals.forEach(el => {
     const windowHeight = window.innerHeight;
-    const elementTop = reveals[i].getBoundingClientRect().top;
+    const elementTop = el.getBoundingClientRect().top;
     const elementVisible = 100;
 
     if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
+      el.classList.add("active");
     } else {
-      reveals[i].classList.remove("active");
+      el.classList.remove("active");
     }
-  }
+  });
 }
 
 window.addEventListener("scroll", reveal);
-window.addEventListener("load", reveal); // Para mostrar al cargar también
-// Botón hamburguesa para mostrar u ocultar menú
+window.addEventListener("load", reveal);
+
+// Menú hamburguesa
 const toggleBtn = document.getElementById('menu-toggle');
-const navbar = document.getElementById('navbar');
+const navList = document.querySelector('nav ul');
 
 toggleBtn.addEventListener('click', () => {
-  navbar.classList.toggle('active');
+  navList.classList.toggle('active');
 });
 
-// Cierra el menú al hacer clic en cualquier enlace
-document.querySelectorAll('#navbar a').forEach(link => {
+// Cerrar menú al hacer clic en enlace
+document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', () => {
-    navbar.classList.remove('active');
+    navList.classList.remove('active');
   });
 });

@@ -1,4 +1,3 @@
-/* ESTILOS BASE */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -12,12 +11,11 @@ body {
   padding: 20px;
 }
 
-/* NAVBAR */
 header {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #6a1b9a; /* Morado */
+  background-color: #6a1b9a;
   color: white;
   transition: all 0.3s ease;
   z-index: 999;
@@ -57,7 +55,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* SECCIONES */
 section {
   margin-top: 120px;
   padding: 40px 20px;
@@ -66,7 +63,6 @@ section {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-/* FOTO */
 .foto {
   width: 150px;
   border-radius: 50%;
@@ -75,7 +71,6 @@ section {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-/* ANIMACIONES AL SCROLL */
 .reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -87,7 +82,6 @@ section {
   transform: translateY(0);
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 20px;
@@ -97,12 +91,17 @@ footer {
   margin-top: 60px;
 }
 
-/* CORRIGE QUE EL MENÚ NO CUBRA EL CONTENIDO */
 section {
   scroll-margin-top: 120px;
 }
 
-/* MEDIA QUERIES */
+/* Responsive */
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   header .container {
     flex-direction: column;
@@ -112,14 +111,27 @@ section {
 
   nav ul {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 0;
+    width: 100%;
     align-items: center;
+    display: none;
+    transition: all 0.3s ease;
   }
 
-  nav a {
-    font-size: 1rem;
-    padding: 8px;
+  nav ul.active {
+    display: flex;
+  }
+
+  nav li {
+    border-top: 1px solid #ffffff33;
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
   }
 
   .foto {
@@ -133,41 +145,8 @@ section {
     padding: 30px 15px;
   }
 
-  .hero h1 {
-    font-size: 1.8rem;
+  h1 {
+    font-size: 1.5rem;
     text-align: center;
-  }
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-    color: white;
-  }
-
-  nav.navbar {
-    display: none;
-    width: 100%;
-    text-align: center;
-  }
-
-  nav.navbar.active {
-    display: block;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  nav li {
-    border-top: 1px solid #ffffff33;
-    padding: 10px 0;
   }
 }
