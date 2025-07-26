@@ -22,3 +22,17 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 window.addEventListener("load", reveal); // Para mostrar al cargar también
+// Botón hamburguesa para mostrar u ocultar menú
+const toggleBtn = document.getElementById('menu-toggle');
+const navbar = document.getElementById('navbar');
+
+toggleBtn.addEventListener('click', () => {
+  navbar.classList.toggle('active');
+});
+
+// Cierra el menú al hacer clic en cualquier enlace
+document.querySelectorAll('#navbar a').forEach(link => {
+  link.addEventListener('click', () => {
+    navbar.classList.remove('active');
+  });
+});

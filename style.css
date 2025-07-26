@@ -138,3 +138,36 @@ section {
     text-align: center;
   }
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8em;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    color: white;
+  }
+
+  nav.navbar {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  nav.navbar.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  nav li {
+    border-top: 1px solid #ffffff33;
+    padding: 10px 0;
+  }
+}
