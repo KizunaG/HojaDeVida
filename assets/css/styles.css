@@ -1,0 +1,30 @@
+:root{
+  --radius: 14px;
+}
+
+/* Hero gradient suave */
+.bg-gradient{
+  background: radial-gradient(1200px 600px at -10% -10%, #2a3a8d33, transparent 60%),
+              radial-gradient(1000px 500px at 110% -10%, #3a8d6b33, transparent 60%),
+              linear-gradient(180deg, #0b1220, #0b1220);
+}
+
+/* Timeline simple */
+.timeline{ position: relative; padding-left: 26px; }
+.timeline::before{
+  content:""; position:absolute; left:10px; top:0; bottom:0; width:2px; background:rgba(255,255,255,.1);
+}
+.t-item{ position:relative; margin-bottom:18px; }
+.t-dot{
+  position:absolute; left:3px; top:6px; width:14px; height:14px; border-radius:50%;
+  background:#0d6efd; box-shadow:0 0 0 4px rgba(13,110,253,.2);
+}
+.t-content{ background-color:rgba(255,255,255,.02); border:1px solid rgba(255,255,255,.08);
+  border-radius: var(--radius); padding:12px; }
+
+/* Animación de aparición (IntersectionObserver en app.js) */
+.reveal{ opacity:0; transform: translateY(12px); transition: all .5s ease; }
+.reveal.show{ opacity:1; transform: none; }
+
+/* Navbar botón tema */
+#themeToggle{ border-radius: 999px; }

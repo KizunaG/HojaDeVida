@@ -1,103 +1,212 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="es" data-bs-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Hoja de Vida - Héctor Galicia</title>
-  <link rel="stylesheet" href="style.css" />
-  <script defer src="script.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hoja de Vida — Héctor Rodolfo Galicia Albeño</title>
+  <meta name="description" content="Hoja de vida profesional: perfil, experiencia, formación, proyectos y contacto de Héctor Rodolfo Galicia Albeño." />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
- <header id="main-header">
-  <div class="container">
-    <h1>Héctor Rodolfo Galicia Albeño</h1>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <!-- Añadí id="navbar" al UL directamente -->
-  <nav id="navbar">
-  <ul>
-    <li><a href="#InfoPersonal">Información Personal</a></li>
-    <li><a href="#perfil">Objetivo</a></li>
-    <li><a href="#formacion">Formación</a></li>
-    <li><a href="#experiencia">Experiencia</a></li>
-    <li><a href="#habilidades">Habilidades</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
-
-  </div>
-</header>
-  <section class="InfoPersonal reveal" id="InfoPersonal">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom sticky-top">
     <div class="container">
-      <img src="tu-foto.jpg" alt="Foto de perfil" class="foto">
-      <h2>Información Personal</h2>
-      <p>Soy un estudiante nacido en el municipio de Chiquimulilla Santa Rosa, en el país de Guatemala.<br>
-        Soy alguien responsable y apasionado por la tecnología, con interés en el desarrollo web y la mejora continua.<br>
-        Me destaco por ser autodidacta, organizado y con ganas de aprender nuevas herramientas constantemente.</p>
-      <p>Actualmente tengo 21 años y soy estudiante del octavo semestre de la carrera de Ingeniería en Sistemas.</p>
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-person-badge"></i> Héctor Galicia</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nv" aria-controls="nv" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="nv" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto gap-2">
+          <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#formacion">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+          <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+        <button id="themeToggle" class="btn btn-outline-secondary ms-lg-3" title="Cambiar tema"><i class="bi bi-sun"></i></button>
+      </div>
     </div>
-  </section>
+  </nav>
 
-  <section class="perfil reveal" id="perfil">
-    <div class="container">
-      <h2>Objetivo Personal</h2>
-      <ul>
-        <li>Bachiller en Ciencias y Letras con orientación en Computación, dispuesto a encontrar nuevos conocimientos para nuevos problemas a futuro.</li>
-      </ul>
+  <!-- HERO -->
+  <header class="py-5 bg-gradient">
+    <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
+      <img src="assets/img/profile.jpg" alt="Foto de perfil de Héctor Galicia" class="rounded-circle shadow" width="140" height="140">
+      <div>
+        <h1 class="display-5 fw-bold mb-2">Héctor Rodolfo Galicia Albeño</h1>
+        <p class="lead text-secondary mb-3">Estudiante de Ingeniería en Sistemas · Desarrollo Web</p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="mailto:hgalicia812@gmail.com" class="btn btn-primary"><i class="bi bi-envelope"></i> Contactar</a>
+          <a href="https://github.com/KizunaG" target="_blank" class="btn btn-outline-light"><i class="bi bi-github"></i> GitHub</a>
+          <!-- Agrega tu LinkedIn si lo tienes -->
+          <!-- <a href="https://www.linkedin.com/in/..." target="_blank" class="btn btn-outline-light"><i class="bi bi-linkedin"></i> LinkedIn</a> -->
+        </div>
+      </div>
     </div>
-  </section>
+  </header>
 
-  <section class="formacion reveal" id="formacion">
-    <div class="container">
-      <h2>Formación Académica</h2>
-      <ul>
-        <h3>Nivel Primario</h3>
-        <li>Colegio Evangélico "Shaddai" || 2011 - 2016</li>
-      </ul>
-      <ul> 
-        <h3>Nivel Básico</h3>
-        <li>Colegio Cristiano Generación de Josué || 2017 - 2019</li>
-      </ul>
-      <ul>
-        <h3>Nivel Diversificado</h3>
-        <li>Bachillerato en Ciencias y Letras con Orientación en Computación || Colegio Técnico de Computación "CTS" || 2020 - 2021</li>
-      </ul>
-      <ul> 
-        <h3>Universidad</h3>
-        <li>Ingeniería en Sistemas de Información y Ciencias de la Computación || Universidad Mariano Gálvez de Guatemala || 2022 - Presente</li>
-      </ul>
-    </div>
-  </section>
+  <main class="container my-5">
+    <!-- PERFIL -->
+    <section id="perfil" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Perfil Profesional</h2>
+      <p class="text-secondary">
+        Estudiante nacido en Chiquimulilla, Santa Rosa (Guatemala), responsable y apasionado por la tecnología.
+        Autodidacta, organizado y con enfoque en mejora continua. Actualmente curso el octavo semestre de
+        Ingeniería en Sistemas; me interesan el desarrollo web y las buenas prácticas.
+      </p>
+      <hr class="my-4">
+    </section>
 
-  <section class="experiencia reveal" id="experiencia">
-    <div class="container">
-      <h2>Experiencia Laboral</h2>
-      <ul>
-        <li>Proyecto personal: Sitio web de portafolio con HTML, CSS y JavaScript</li>
+    <!-- OBJETIVO PROFESIONAL (opcional) -->
+    <section class="reveal">
+      <h2 class="h3 fw-bold mb-3">Objetivo Profesional</h2>
+      <p class="text-secondary">
+        Bachiller en Ciencias y Letras con orientación en Computación, dispuesto a adquirir nuevos conocimientos
+        para resolver problemas y aportar a equipos de desarrollo con compromiso y ética.
+      </p>
+      <hr class="my-4">
+    </section>
+
+    <!-- FORMACIÓN -->
+    <section id="formacion" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Formación Académica</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent">
+          <div class="d-flex justify-content-between"><strong>Colegio Evangélico “Shaddai” — Nivel Primario</strong><span class="text-secondary">2011–2016</span></div>
+        </li>
+        <li class="list-group-item bg-transparent">
+          <div class="d-flex justify-content-between"><strong>Colegio Cristiano Generación de Josué — Nivel Básico</strong><span class="text-secondary">2017–2019</span></div>
+        </li>
+        <li class="list-group-item bg-transparent">
+          <div class="d-flex justify-content-between"><strong>CTC “CTS” — Bachillerato en Computación</strong><span class="text-secondary">2020–2021</span></div>
+        </li>
+        <li class="list-group-item bg-transparent">
+          <div class="d-flex justify-content-between"><strong>Universidad Mariano Gálvez — Ingeniería en Sistemas</strong><span class="text-secondary">2022–Presente</span></div>
+        </li>
       </ul>
-    </div>
-  </section>
+      <hr class="my-4">
+    </section>
 
-  <section class="habilidades reveal" id="habilidades">
-    <div class="container">
-      <h2>Habilidades Técnicas</h2>
-      <ul>
-        <li>Lenguajes: HTML, CSS, JavaScript, C#</li>
-      </ul>
-    </div>
-  </section>
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Experiencia</h2>
+      <div class="timeline">
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-content">
+            <div class="d-flex justify-content-between">
+              <strong>Proyecto personal — Portafolio Web (HTML, CSS, JS)</strong>
+              <span class="text-secondary">2025</span>
+            </div>
+            <p class="mb-1 text-secondary">
+              Sitio de portafolio con estructura por secciones, navegación responsive y animaciones on-scroll.
+            </p>
+            <a class="link-primary" href="https://kizunag.github.io/HGPortafolio/" target="_blank" rel="noopener">Ver portafolio</a>
+          </div>
+        </div>
+        <!-- Agrega más items si corresponde -->
+      </div>
+      <hr class="my-4">
+    </section>
 
-  <section class="contacto reveal" id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <p>Email: hgalicia812@gmail.com</p>
-      <p>Teléfono: 58410075</p>
-    </div>
-  </section>
+    <!-- HABILIDADES -->
+    <section id="habilidades" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Habilidades Técnicas</h2>
+      <div class="mb-2 text-secondary">Lenguajes / Tecnologías</div>
+      <div class="d-flex flex-wrap gap-2 mb-3">
+        <span class="badge text-bg-primary">HTML5</span>
+        <span class="badge text-bg-primary">CSS3</span>
+        <span class="badge text-bg-primary">JavaScript</span>
+        <span class="badge text-bg-primary">C#</span>
+        <span class="badge text-bg-secondary">Responsive Design</span>
+      </div>
+      <div class="mb-2 text-secondary">Herramientas</div>
+      <div class="d-flex flex-wrap gap-2">
+        <span class="badge text-bg-secondary">Git & GitHub</span>
+        <span class="badge text-bg-secondary">Bootstrap</span>
+        <span class="badge text-bg-secondary">VS Code</span>
+      </div>
+      <hr class="my-4">
+    </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Héctor Galicia. Universidad Mariano Gálvez de Guatemala. Todos los derechos reservados.</p>
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Proyectos</h2>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">SPA Productos (FakeStore)</h5>
+              <p class="card-text text-secondary">Listado, filtros y detalle en React/TS. Deploy en Netlify.</p>
+              <a href="#" class="btn btn-sm btn-outline-primary" target="_blank">Ver demo</a>
+              <a href="#" class="btn btn-sm btn-outline-secondary" target="_blank">Repositorio</a>
+            </div>
+          </div>
+        </div>
+        <!-- Duplica tarjetas si deseas mostrar más proyectos -->
+      </div>
+      <hr class="my-4">
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="reveal">
+      <h2 class="h3 fw-bold mb-3">Contacto</h2>
+      <div class="row g-4">
+        <div class="col-md-5">
+          <ul class="list-unstyled text-secondary">
+            <li><i class="bi bi-envelope"></i> hgalicia812@gmail.com</li>
+            <li><i class="bi bi-telephone"></i> 58410075</li>
+            <!-- Agrega tu ubicación si quieres -->
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <form id="cvForm" novalidate class="row g-3">
+            <div class="col-md-6">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" required>
+              <div class="invalid-feedback">Ingresa tu nombre.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Correo</label>
+              <input type="email" class="form-control" required>
+              <div class="invalid-feedback">Ingresa un correo válido.</div>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Mensaje</label>
+              <textarea class="form-control" rows="4" required></textarea>
+              <div class="invalid-feedback">Escribe un mensaje.</div>
+            </div>
+            <div class="col-12 d-flex gap-2">
+              <button class="btn btn-primary" type="submit"><i class="bi bi-send"></i> Enviar</button>
+              <button class="btn btn-outline-secondary" type="reset">Limpiar</button>
+            </div>
+            <div id="formMsg" class="text-success small" style="display:none">¡Mensaje validado (demo)!</div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-top py-4">
+    <div class="container small text-secondary d-flex flex-wrap justify-content-between gap-2">
+      <span>© 2025 Héctor Rodolfo Galicia Albeño</span>
+      <span>
+        <a href="https://github.com/KizunaG/HojaDeVida" class="link-secondary" target="_blank" rel="noopener">
+          <i class="bi bi-github"></i> Repositorio
+        </a>
+      </span>
     </div>
   </footer>
+
+  <!-- Bootstrap JS (bundle con Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JS propio -->
+  <script src="assets/js/app.js"></script>
 </body>
 </html>
